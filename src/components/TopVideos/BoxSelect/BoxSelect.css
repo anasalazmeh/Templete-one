@@ -1,0 +1,14 @@
+ .block{
+  padding: 20px;
+  background-color: white;
+  cursor: pointer;
+}
+ .block p{
+  color: var(--color-p);
+}
+.block:hover{
+  color: var(--main-color);
+}
+ .block.active{
+  color: var(--main-color);
+}

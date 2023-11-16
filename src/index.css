@@ -1,0 +1,42 @@
+:root{
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+  --main-transition: 0.3s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --section-background: #ececec;
+  --focs-color:#faf6f69f;
+  --color-p:#6d6c6c;
+}
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: "Cairo", sans-serif;
+}
+.container{
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+@media (min-width:767px){
+  .container{
+      width: 750px;
+  }
+}
+@media (min-width:992px){
+  .container{
+      width: 970px;
+  }
+}
+@media (min-width:1200px){
+  .container{
+      width: 1170px;
+  }
+}

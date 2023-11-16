@@ -1,0 +1,22 @@
+:root{
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+  --main-transition: 0.3s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --section-background: #ececec;
+  --focs-color:#faf6f69f;
+  --color-p:#6d6c6c;
+}
+.ARTICLES .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px ,1fr));
+  grid-gap: 40px 40px ;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+@media (max-width:250px) {
+  .ARTICLES .container{
+    grid-template-columns: repeat(auto-fill,minmax(100% ,1fr));
+  }
+}

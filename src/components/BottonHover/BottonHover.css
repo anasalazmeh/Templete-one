@@ -1,0 +1,140 @@
+.BottonHover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 50px; */
+  margin-bottom: 50px;
+}
+.BottonHover .Text{
+  padding: 0 20px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  border: 2px solid black;
+  position: relative;
+  z-index: 3;
+}
+@media (max-width:350px) {
+   .BottonHover .Text{
+    font-size: 20px;
+
+  }
+}
+.BottonHover .Text::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  top: 50%;
+  transform: translateY(-50%);
+  right: -40px;
+}
+.BottonHover .Text::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  top: 50%;
+  transform: translateY(-50%);
+  left: -40px;
+}
+@media (max-width:350px) {
+ .BottonHover .Text::before {
+
+    right: -30px;
+  }
+  .BottonHover .Text::after {
+    left: -30px;
+  }
+}
+.BottonHover .Text:hover::before{
+  animation-name:animbefore ;
+  animation-duration: 0.5s;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+
+}
+.BottonHover .Text:hover::after{
+  animation-name:animafter ;
+  animation-duration: 0.5s;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+
+}
+.BottonHover .Text:hover{
+  animation-name:colorWithe ;
+  animation-duration: 0.5s;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+@keyframes animbefore {
+  0%{
+      right: -40px;
+  }
+  70%{
+      right: 0px;
+  }
+  90%{
+      right: 0px;
+  }
+  99%{
+      right: 0;
+      width: 51%;
+      height: 100%;
+      border-radius: 0%;
+      z-index: -1;
+  }
+  100%{
+      right: 0;
+      width: 51%;
+      height: 100%;
+      border-radius: 0%;
+      z-index: -1;
+  }
+
+
+}
+@keyframes animafter {
+  0%{
+      left: -40px;
+  }
+  70%{
+      left: 0px;
+  }
+  99%{
+      left: 0;
+      width: 51%;
+      height: 100%;
+      border-radius: 0%;
+      z-index: -1;
+  }
+  100%{
+      left: 0;
+      width: 51%;
+      height: 100%;
+      border-radius: 0%;
+      z-index: -1;
+
+  }
+
+
+}
+@keyframes colorWithe{
+  0%{
+      color: black;
+  }
+  90%{
+      color: black;
+  }
+  100%{
+      color: white;
+      border: 1px solid var(--main-color);
+  }
+}

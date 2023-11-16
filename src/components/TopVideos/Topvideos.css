@@ -1,0 +1,59 @@
+:root{
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+  --main-transition: 0.3s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --section-background: #ececec;
+  --focs-color:#faf6f69f;
+  --color-p:#6d6c6c;
+}
+.TOP-VIDEOS{
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+}
+/* end TOP-VIDEOS */
+.sections-TOP-VIDEOS .container1{
+  background-color: #e2e2e2;
+  display: flex;
+  border: 1px solid #e2e2e2;
+  padding: 0;
+}
+
+.sections-TOP-VIDEOS .container1 .col-img img{
+  height:75%;
+  width: 100%;
+}
+.sections-TOP-VIDEOS .container1 .col-block{
+  width: 30%;
+  margin: 0;
+}
+.sections-TOP-VIDEOS .container1 .col-img{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-between;
+}
+@media (max-width:991px){
+  .sections-TOP-VIDEOS .container1{
+      display: flex;
+      flex-direction: column;
+  }
+  .sections-TOP-VIDEOS .container1 .col-block,
+  .sections-TOP-VIDEOS .container1 .col-img{
+      width: 100%;
+  }
+}
+.sections-TOP-VIDEOS .container1 .col-img .text{
+  background-color: white;
+  padding: 20px;
+}
+.sections-TOP-VIDEOS .container1 .col-block .block-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #f4f4f4;;
+}

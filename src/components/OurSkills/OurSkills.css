@@ -1,0 +1,51 @@
+.OUR-SKILLS{
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+}
+.sections-OUR-SKILLS{
+  margin-top: 100px;
+}
+.sections-OUR-SKILLS .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+}
+.sections-OUR-SKILLS .container .col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sections-OUR-SKILLS .container .col img{
+  width: 100%;
+}
+.sections-OUR-SKILLS .container .col .lasts{
+  width: 90%;
+}
+.sections-OUR-SKILLS .container .col .lasts .nav .navber{
+  width: 100%;
+  background-color: #EEE;
+  height: 30px;
+  position: relative;
+  border-radius: 50px;
+}
+.sections-OUR-SKILLS .container .col .lasts .nav .navber span{
+  position: absolute;
+  color: var(--main-color);
+  border: 1px solid #ccc;
+  right: 0;
+  top: -40px;
+  padding: 5px;
+  border-radius: 5px;
+ 
+}
+.sections-OUR-SKILLS .container .col .lasts .nav .navber .navbar-pro {
+  position: absolute;
+  left: 0;
+  height: 30px;
+  background-color: var(--main-color);
+  border-radius: 50px;
+}
+@media (max-width:766px){
+  .sections-OUR-SKILLS .container{
+      grid-template-columns: repeat(auto-fill,minmax(90%,1fr));
+  }
+}
